@@ -1,0 +1,744 @@
+/*头部开始*/
+
+.header{
+    width:100%;
+    background:#2B2C30;
+    height:65px;
+    border-bottom:1px solid #666;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99;
+}
+.nav{
+    height:100%;
+    text-align:center;
+    line-height: 65px;
+    background:#2B2C30;
+    position:relative;
+    z-index: 99;
+    overflow:hidden;
+}
+.logo{
+    text-align:left;
+    font-size:40px;
+    color:#FFA200;
+    font-family:"4YEOstamp";
+}
+.logo,*[nav-right]:hover{
+    cursor:pointer;
+}
+.navr{
+    background:#2F3238;
+    color:#FFA200;
+
+}
+.nav div[class|="col"]:hover {
+    color:#FFA200;
+    cursor:pointer;
+    transition-duration:0.3s;
+}
+/*header下面*/
+.nav1{
+    height:100%;
+    text-align:center;
+    line-height: 65px;
+    background:#2B2C30;
+    position:relative;
+    z-index: 99;
+    display:none;
+}
+*[nav-left]{
+    text-align:left;
+}
+*[nav-right]{
+    text-align:right;
+    font-size:40px;
+    color:#fff;
+}
+*[nav-right]:hover{
+    color:#FFA200;
+}
+.nav1 .sons{
+    width:100%;
+    position:absolute;
+    left:0;
+    display:none;
+}
+.sons>.son{
+    width:100%;
+    background:#2B2C30;
+    display:block;
+    text-align:center;
+}
+.sons .son:hover{
+    color:#FFA200;
+    transition-duration:0.3s;
+    cursor:pointer;
+}
+.sons .son1{
+    color:#FFA200;
+    background:#2F3238;
+}
+/*头部结束*/
+.abouts:nth-of-type(even){
+    background:#333439;
+}
+.abouts:nth-of-type(odd){
+    background:#2B2C30;
+}
+/*banner开始*/
+#banner{
+    width:100%;
+    height:666px;
+    background:url(../imgs/header_bg.jpg)  no-repeat  center 62px;
+    background-size:cover;
+    position:relative;
+    border-bottom:1px solid #ccc;
+}
+#banner .zhezhao{
+    width:100%;
+    height:100%;
+    background:rgba(95, 109, 126, 0.4) none repeat scroll 0% 0%;
+    text-align:center;
+    position:absolute;
+}
+.zhezhao>div[class|=col]{
+    margin-top:260px;
+}
+.biaoti-h1{
+    width:60%;
+    margin:0 auto;
+    font-family: "Raleway",Arial,Helvetica,sans-serif;
+    font-weight:600;
+    font-size:30px;
+    border:1px solid rgba(255, 255, 255, 0.4);
+    border-left:0;
+    border-right:0;
+    margin-bottom:70px;
+ }
+.biaoti-h1 span{
+    font-size:30px;
+    color:#FFA200;
+}
+#banner .btn{
+    font-weight: 500;
+    border:1px solid rgba(255, 255, 255, 0.4);
+    color:#fff;
+    padding:15px 30px;
+    letter-spacing: 1px;
+    line-height: normal;
+}
+#banner .btn:hover{
+    background:#fff;
+    color:#FFA200;
+    font-weight:bold;
+    transition: all 0.3s ease 0s;
+}
+@media screen and (min-width:768px) and (max-width:1170px){
+    #banner{
+        width:100%;
+    }
+    .biaoti-h1,.biaoti-h1 span{
+        width:49%;
+        font-size:62px;
+    }
+    .abouts{
+        width:100%;
+        min-height:600px;
+    }
+}
+@media screen and (min-width:1170px){
+    #banner{
+        width:100%;
+    }
+    .abouts{
+        width:100%;
+        min-height:600px;
+    }
+    .biaoti-h1,.biaoti-h1 span{
+        width:49%;
+        font-size:72px;
+    }
+    .logo{
+        font-size:40px;
+        color:#FFA200;
+    }
+    .daoh div[class|=col]:first-of-type{
+        padding-left:140px;
+    }
+    .daoh div[class|=col]:last-of-type{
+        padding-right:140px;
+    }
+}
+/*banner结束*/
+/*关于我*/
+.abouts{
+    width:100%;
+    background-color:#333439;
+    background-size:cover;
+    border:1px solid rgba(255, 255, 255, 0.4);
+    border-top:0;
+    overflow: hidden;
+    position:relative;
+}
+.abouts-h2{
+    text-align:center;
+    font-weight:700;
+    font-size: 38px;
+    padding-top:45px;
+    padding-bottom:20px;
+    margin:0;
+}
+.abouts-h2 span{
+    font-weight: 700;
+    font-size: 38px;
+    color:#FFA200;
+}
+.border{
+    width:35%;
+    margin:0 auto;
+    border-top:1px solid #fff;
+}
+.chang{
+    width:50px;
+    height:8px;
+    background:#fff;
+    margin:-5px auto;
+}
+.abouts-btn {
+    margin-top:40px;
+}
+.know{
+    height:30px;
+    text-align:center;
+    color:#ccc;
+    margin-top:30px;
+    font-size:20px;
+}
+.img{
+    width:100%;
+    height:300px;
+    margin-bottom:10px;
+    background:url(../imgs/banner9.jpg) no-repeat center;
+    background-size: cover;
+}
+@media screen and (max-width:768px) {
+    .img{
+        width:100%;
+    }
+}
+@media screen and (min-width:1170px){
+    .img{
+        width:80%;
+    }
+}
+.abouts-btn div[class|=col]{
+    padding:0 15px;
+}
+.abouts-btn div[class|=col]:nth-of-type(2) .skill{
+    width:100%;
+    height:20%;
+}
+.name,.work{
+    text-align:left;
+    font-size: 22px;
+    font-family: "robotobold";
+    margin-bottom: 25px;
+    font-weight:500;
+    text-transform: uppercase;
+}
+.work{
+    display:block;
+    font-size:18px;
+}
+.biaoti{
+    font-size:25px;
+    letter-spacing: 0.5px;
+    text-align:left;
+    margin-bottom:10px;
+}
+.skill-biao .skill{
+    width:80%;
+    padding-top:50px;
+}
+.skill-biao .skill h3{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    text-align:left;
+}
+.skill-biao .skill div{
+    height:8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+    border-radius:50px;
+}
+.skill-biao .skill div .skillt{
+    width:80%;
+    height:100%;
+    background:#FFA200;
+}
+/*关于我结束*/
+/*我的作品开始*/
+.show{
+    padding-bottom:40px;
+}
+.abouts:nth-of-type(4) {
+    background: url(../imgs/bicycle.jpg) no-repeat center;
+    background-size: cover;
+}
+.abouts:nth-of-type(6){
+    background:url(../imgs/skill.jpg) no-repeat center;
+    background-size:cover;
+}
+.abouts:nth-of-type(7){
+    background:url(../imgs/aa.jpg) no-repeat center;
+    background-size:cover;
+}
+.zuopin div[class|=col]{
+    background:#fff;
+    height:330px;
+    border:2px solid #333439;
+}
+.zuopin div[class|=col]>.zi{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.zuopin div[class|=col]:nth-of-type(1)>.zi{
+    background:url(../imgs/tianmao.jpg) no-repeat -8px 10px;
+    background-size:350px;
+}
+.zuopin div[class|=col]:nth-of-type(2)>.zi{
+    background:url(../imgs/suning1.jpg) no-repeat center;
+    background-size:273px;
+}
+.zuopin div[class|=col]:nth-of-type(3)>.zi{
+    background:url(../imgs/qwe.jpg) no-repeat -33px -27px;
+    background-size:410px;
+}
+.zuopin div[class|=col]:nth-of-type(4)>.zi{
+    background:url(../imgs/erweima.png) no-repeat center center;
+    background-size:cover;
+}
+.biaoti-h2{
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    margin:30px 0 40px 0;
+    font-size:30px;
+}
+/*作品二展示开始*/
+.small{
+    height:1000px;
+}
+@media screen and (max-width:768px) and (min-width:1170px) {
+    .small{
+        height:1000px;
+    }
+}
+@media screen and (min-width:1170px) {
+    .small{
+        height:100%;
+    }
+}
+.out{
+    width:100%;
+    height:100%;
+    position:relative;
+    margin-top:90px;
+}
+.out .zuopin{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.zuopin div[class|=col]{
+    position:relative;
+}
+/*作品二第一个选项卡开始*/
+.show1 .zuopin:nth-of-type(1) div[class|=col]:nth-of-type(1)>.zi{
+    /*background:url(../imgs/贪吃蛇.jpg) no-repeat -17px 17px;*/
+    /*background-size:316px;*/
+    background:url(../imgs/贪吃蛇.jpg) no-repeat center center;
+    background-size:cover;
+}
+.show1 .zuopin:nth-of-type(1) div[class|=col]:nth-of-type(2)>.zi{
+    background:url(../imgs/fang.jpeg) no-repeat center center;
+    background-size:cover;
+}
+.show1 .zuopin:nth-of-type(1) div[class|=col]:nth-of-type(3)>.zi{
+    background:url(../imgs/huihua1.jpg) no-repeat center center ;
+    background-size:cover;
+}
+.show1 .zuopin:nth-of-type(1) div[class|=col]:nth-of-type(4)>.zi{
+    background:url(../imgs/biao.jpg) no-repeat center center;
+    background-size:cover;
+}
+
+
+/*作品二第一个选项卡结束*/
+/*作品二第二个选项卡开始*/
+.show1 .zuopin:nth-of-type(2) div[class|=col]:nth-of-type(1)>.zi{
+    background:url(../imgs/dao.jpg) no-repeat center center;
+    background-size:cover;
+}
+.show1 .zuopin:nth-of-type(2) div[class|=col]:nth-of-type(2)>.zi{
+    background:url(../imgs/list.jpg) no-repeat center center;
+    background-size:cover;
+}
+.show1 .zuopin:nth-of-type(2) div[class|=col]:nth-of-type(3)>.zi{
+    background:url(../imgs/打字.jpg) no-repeat center center;
+    background-size:cover;
+}
+/*作品二第二个选项卡结束*/
+/*作品二第三个选项卡开始*/
+.show1 .zuopin:nth-of-type(3) div[class|=col]:nth-of-type(1)>.zi{
+    background:url(../imgs/white.jpg) no-repeat center center;
+    background-size:cover;
+}
+.show1 .zuopin:nth-of-type(3) div[class|=col]:nth-of-type(2)>.zi{
+    background:url(../imgs/打字.jpg) no-repeat center center;
+    background-size:cover;
+}
+/*作品二第三个选项卡结束*/
+/*作品二第四个选项卡开始*/
+.show1 .zuopin:nth-of-type(4) div[class|=col]:nth-of-type(1)>.zi{
+    background:url(../imgs/wuziqi.jpg) no-repeat center center;
+    background-size:cover;
+}
+/*作品二第四个选项卡结束*/
+.zi{
+    width:100%;
+    height:100%;
+}
+.zi .zizhe{
+    width:100%;
+    height:100%;
+    padding-top:80px;
+    position:relative;
+}
+/*.zi .zizhe:hover{*/
+    /*transform:scale(1,1);*/
+    /*transition:transform 2s linear;*/
+    /*!*background:rgba(95, 109, 126, 0.4) none repeat scroll 0% 0%;*!*/
+/*}*/
+.zizhe .zhez{
+    display:block;
+    width:170px;
+    height:170px;
+    margin:0 auto;
+    border:2px solid #fff;
+    color:#ccc;
+    transform:rotate(45deg);
+    background:rgba(95, 109, 126, 0.4) none repeat scroll 0% 0%;
+}
+.zizhe span {
+    position: absolute;
+    top: 138px;
+    left:108px;
+    font-size: 56px;
+}
+
+/*http://zhengzhan114.duapp.com/statics/images/imgs/285.jpg*/
+
+                                                     /*http://zhengzhan114.duapp.com/uploadfile/2015/1215/20151215120223815.jpg*/
+.zi .zi-span{
+    display:block;
+    width:160px;
+    height:70px;
+    position:absolute;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    font-size:60px;
+    text-align:center;
+    line-height:70px;
+    color:#fff;
+    border:2px solid #ffa200;
+}
+.zi a{
+    display:block;
+    width:100%;
+    height:100%;
+    background:rgba(95, 109, 126, 0.6) none repeat scroll 0% 0%;
+    /*background:rgba(255,162,0,0.6) none repeat scroll 0% 0%;;*/
+    transform:scale(0,0);
+}
+/*.zi a:hover{*/
+    /*transform:scale(1,1);*/
+    /*transition:transform 1s linear;*/
+/*}*/
+.left-move{
+    width:0%;
+    height:100%;
+    background:rgba(95, 109, 126, 0.4) none repeat scroll 0% 0%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.right-move{
+    width:0%;
+    height:100%;
+    background:rgba(95, 109, 126, 0.4) none repeat scroll 0% 0%;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+@media screen and (min-width:768px) and (max-width:1170px) {
+    .zi{
+        height:380px;
+    }
+    .zizhe span {
+        position:absolute;
+        left:126px;
+        top:154px;
+        font-size:70px;
+        color:#000;
+    }
+    .zi .zizhe{
+        padding-top:86px;
+    }
+    .zizhe .zhez{
+        width:200px;
+        height:200px;
+    }
+    .zuopin div[class|=col]{
+        background:#fff;
+        height:380px;
+        border:2px solid #333439;
+    }
+    .zuopin div[class|=col]:nth-of-type(1)>.zi{
+        background:url(../imgs/tianmao.jpg) no-repeat -5px 9px;
+        background-size:402px;
+    }
+    .zuopin div[class|=col]:nth-of-type(2)>.zi{
+        background:url(../imgs/suning1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .zuopin div[class|=col]:nth-of-type(3)>.zi{
+        background:url(../imgs/qwe.jpg) no-repeat -34px -26px;
+        background-size:463px;
+    }
+    .zuopin div[class|=col]:nth-of-type(4)>.zi{
+        background:url(../imgs/erweima.png) no-repeat center center;
+        background-size:cover ;
+    }
+    .show1 .zuopin:nth-of-type(1) div[class|=col]:nth-of-type(2)>.zi{
+        background:url(../imgs/fang.jpeg) no-repeat 33px 33px;
+        background-size:309px;
+    }
+    .show1 .zuopin:nth-of-type(1) div[class|=col]:nth-of-type(3)>.zi{
+        background:url(../imgs/huihua1.jpg) no-repeat 0px 60px;
+        background-size:380px;
+    }
+    .show1 .zuopin:nth-of-type(1) div[class|=col]:nth-of-type(4)>.zi{
+        background:url(../imgs/biao.jpg) no-repeat 2px 46px;
+        background-size:368px;
+    }
+}
+@media screen and (min-width:1170px) {
+    .zi .zizhe{
+        padding-top:68px;
+    }
+    .zizhe .zhez{
+        width:150px;
+        height:150px;
+    }
+    .zizhe span {
+        position: absolute;
+        top: 111px;
+        left:88px;
+        font-size: 56px;
+    }
+    .zuopin div[class|=col]{
+        background:#fff;
+        height:286px;
+        border:2px solid #333439;
+    }
+    .zuopin div[class|=col]:nth-of-type(1)>.zi{
+        background:url(../imgs/tianmao.jpg) no-repeat center 1px;
+        background-size:320px;
+    }
+    .zuopin div[class|=col]:nth-of-type(2)>.zi{
+        background:url(../imgs/suning1.jpg) no-repeat center;
+        background-size:249px;
+    }
+    .zuopin div[class|=col]:nth-of-type(3)>.zi{
+        background:url(../imgs/qwe.jpg) no-repeat -21px -19px;
+        background-size:350px;
+    }
+    .zuopin div[class|=col]:nth-of-type(4)>.zi{
+        background:url(../imgs/erweima.png) no-repeat center;
+        background-size:410px;
+    }
+}
+.zizhe .zhez:hover{
+    transform:rotate(135deg) scale(1.3,1.3);
+    transition:transform 0.25s linear;
+    border:2px solid #FFA200;
+}
+.zhezhao .daoh{
+    margin:40px auto;
+}
+.zhezhao .daoh div[class|=col]{
+    height:40px;
+    text-align:center;
+    font-size:18px;
+}
+.zhezhao .daoh div[class|=col]:hover{
+    cursor:pointer;
+    color:#FFA200;
+    transition:color 0.5s linear;
+}
+
+/*我的作品结束*/
+/*联系我开始*/
+.p1{
+    display:block;
+    text-align:center;
+    margin:40px 0 50px 0;
+    font-size:16px;
+    color:#f9f2f4;
+}
+.lianxi1 .input1{
+    width:100%;
+    height:34px;
+    border: 1px solid #555;
+    color:#fff;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+    padding: 5px;
+    margin-bottom:30px;
+
+}
+.lianxi1 .textarea{
+    width:100%;
+    height:110px;
+    padding:5px;
+    margin-bottom:30px;
+    border:1px solid #555;
+    color:#fff;
+    font-size:16px;
+    font-weight:500;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+}
+.lianxi1 .submit{
+    width:126px;
+    height:36px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color:#fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight:500;
+    font-size:14px;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+}
+.lianxi1 .submit:hover{
+    cursor:pointer;
+    background:#FFA200;
+}
+.lianxi .adress{
+    width:100%;
+    height:34px;
+    display: block;
+    font-size: 16px;
+    border-bottom: 1px solid #BBB;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.ads{
+    margin-top:35px;
+    color:#c0c0c0;
+}
+.adress i{
+    line-height: 0.75em;
+    font-size: 1.5em;
+    vertical-align: -15%;
+    color:#FFA200;
+    font-style:normal;
+    margin-right:10px;
+}
+@media screen and (min-width:768px) and (max-width:1170px){
+    .lianxi1 .input1{
+        width:100%;
+    }
+    .lianxi1 .textarea{
+        width:100%;
+    }
+}
+@media screen and (min-width:1170px){
+    .lianxi1 .input1{
+        width:92%;
+    }
+    .lianxi1 .textarea{
+        width:96%;
+    }
+    .ads{
+        margin-top:0;
+        margin-bottom:0;
+    }
+}
+/*我的技能开始*/
+.mskills{
+    padding-bottom:40px;
+}
+.circle {
+    width:100%;
+    height:100%;
+    display: inline-block;
+    margin: 1em;
+}
+.center{
+    width:84%;
+    height:100%;
+    margin:0 auto;
+    margin-top:100px;
+    text-align: center;
+}
+.circles-integer{
+    display:block;
+    font-size:38px;
+    margin-left:-32px;
+}
+.center-center{
+    margin:0 auto;
+    float:left;
+    position:relative;
+}
+.center-center .circle{
+    text-align:center;
+}
+.center-center .jineng{
+    text-align:center;
+    height:20px;
+    margin-top:10px;
+    margin-left:25px;
+    font-size:25px;
+}
+.center-center p{
+    display:block;
+    width:40px;
+    height:40px;
+    font-size:38px;
+    position:absolute;
+    top:73px;
+    left:112px;
+}
+@media screen and (min-width:768px) and (min-width:1343px){
+    .center-center{
+        margin-bottom:40px;
+    }
+}
+@media screen and (min-width:1343px){
+    .mskills{
+        padding-bottom:0px;
+    }
+}
+/*我的技能结束*/
